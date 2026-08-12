@@ -1,0 +1,6 @@
+{
+  "name": "Color me NSFW",
+  "description": "Editorial adult coloring studio featuring intricate line art archives, sigil visibility controls, and digital coloring canvas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
