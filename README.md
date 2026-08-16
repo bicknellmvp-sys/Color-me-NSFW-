@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🎨 Color Me NSFW
 
-# Run and deploy your AI Studio app
+**Color Me NSFW** is an interactive, high-resolution adult line-art flipbook and digital coloring web app built for seamless touch interaction on web and mobile devices.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/4283621d-785b-4cd8-922a-df787c8fcb53
+## ✨ Features
 
-## Run Locally
+* **3D Page-Flip Engine:** Real-time touch and drag page-curl animations powered by StPageFlip.
+* **High-Res 300 DPI Line Art:** Ultra-crisp black-and-white vector-style line art optimized for digital coloring and print.
+* **Integrated Coloring Suite:** Built-in FotoJet Designer tools letting users paint, tint, and design custom artwork directly in the browser.
+* **Responsive & PWA Ready:** Mobile-first layout with manifest.json support for zero-clutter fullscreen installation on Android.
 
-**Prerequisites:**  Node.js
+---
 
+## 📁 Repository Structure
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Color-me-NSFW/
+├── public/
+│   ├── pages/            # Normalized 300 DPI flipbook image assets
+│   └── manifest.json     # Web App Manifest for mobile installation
+├── FotoJet_Designer_1.4.5/ # Built-in web coloring tools and asset engine
+├── index.html            # Main app entry point with StPageFlip integration
+└── README.md             # Project documentation
+
+---
+
+## 🚀 Getting Started
+
+### Local Development
+1. Clone the repository:
+   git clone https://github.com/bicknellmvp-sys/Color-me-NSFW-.git
+
+2. Open index.html in your browser or run a local dev server:
+   npx serve .
+
+### Deploying
+This project is configured for continuous deployment on Vercel. Pushing commits to main automatically updates the live production site.
+
+---
+
+## ⚠️ Content Warning
+*This app contains mature line art and is intended strictly for audiences 18+.*
