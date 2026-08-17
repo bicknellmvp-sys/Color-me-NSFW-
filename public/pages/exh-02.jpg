@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" style="background: #0d0e0f;">
+  <rect width="800" height="1000" fill="#0d0e0f"/>
+  <rect x="50" y="50" width="700" height="900" fill="none" stroke="#e3e2e2" stroke-width="4"/>
+  <rect x="70" y="70" width="660" height="860" fill="none" stroke="#e50026" stroke-width="2"/>
+  
+  {/* Velvet Bindings & Ropework */}
+  <path d="M 100,100 C 400,300 400,700 700,900" fill="none" stroke="#e3e2e2" stroke-width="3"/>
+  <path d="M 700,100 C 400,300 400,700 100,900" fill="none" stroke="#e3e2e2" stroke-width="3"/>
+  <circle cx="400" cy="500" r="150" fill="none" stroke="#e50026" stroke-width="3"/>
+  <circle cx="400" cy="500" r="100" fill="none" stroke="#e3e2e2" stroke-width="2" stroke-dasharray="6 6"/>
+  
+  <text x="400" y="925" fill="#e3e2e2" font-family="monospace" font-size="16" letter-spacing="4" text-anchor="middle">EXH. 02 — VELVET BINDINGS</text>
+</svg>

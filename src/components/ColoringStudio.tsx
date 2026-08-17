@@ -70,6 +70,14 @@ export const ColoringStudio: React.FC<ColoringStudioProps> = ({
         setHistory([savedState]);
         setHistoryIndex(0);
       };
+      img.onerror = () => {
+        // Fallback if saved state fails
+        ctx.fillStyle = '#0d0e0f';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        const dataUrl = canvas.toDataURL();
+        setHistory([dataUrl]);
+        setHistoryIndex(0);
+      };
     } else {
       const img = new Image();
       img.crossOrigin = 'anonymous';
@@ -83,6 +91,23 @@ export const ColoringStudio: React.FC<ColoringStudioProps> = ({
         ctx.filter = 'grayscale(100%) contrast(150%) brightness(90%)';
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         ctx.restore();
+
+        const dataUrl = canvas.toDataURL();
+        setHistory([dataUrl]);
+        setHistoryIndex(0);
+        localStorage.setItem(`colormensfw_canvas_${activeExhibit.id}`, dataUrl);
+      };
+
+      img.onerror = () => {
+        ctx.fillStyle = '#0d0e0f';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = '#e3e2e2';
+        ctx.lineWidth = 4;
+        ctx.strokeRect(50, 50, canvas.width - 100, canvas.height - 100);
+        ctx.fillStyle = '#e3e2e2';
+        ctx.font = '24px monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(activeExhibit.title.toUpperCase(), canvas.width / 2, canvas.height / 2);
 
         const dataUrl = canvas.toDataURL();
         setHistory([dataUrl]);

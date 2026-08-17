@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" style="background: #0d0e0f;">
+  <rect width="800" height="1000" fill="#0d0e0f"/>
+  <rect x="50" y="50" width="700" height="900" fill="none" stroke="#e3e2e2" stroke-width="4"/>
+  <rect x="70" y="70" width="660" height="860" fill="none" stroke="#e50026" stroke-width="2"/>
+  
+  {/* Forbidden Veil / Architecture */}
+  <path d="M 200,800 L 200,300 Q 400,100 600,300 L 600,800 Z" fill="none" stroke="#e3e2e2" stroke-width="3"/>
+  <path d="M 300,800 L 300,400 Q 400,250 500,400 L 500,800 Z" fill="none" stroke="#e50026" stroke-width="2"/>
+  <circle cx="400" cy="350" r="50" fill="none" stroke="#e3e2e2" stroke-width="2"/>
+  
+  <text x="400" y="925" fill="#e3e2e2" font-family="monospace" font-size="16" letter-spacing="4" text-anchor="middle">EXH. 05 — THE FORBIDDEN VEIL</text>
+</svg>
